@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SmoothieAndBooks</string>
+    <string name="smoothie_prepared">Your %1$s %2$s smoothie with %3$s has been prepared. Enjoy!</string>
+    <string name="select_all_options">Please select flavor, ice, and size</string>
+</resources>

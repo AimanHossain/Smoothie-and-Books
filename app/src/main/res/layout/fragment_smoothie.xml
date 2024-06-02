@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmoothieFragment">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your smoothie flavor:"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/flavorRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/flavor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strawberry" />
+
+        <RadioButton
+            android:id="@+id/flavor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mango" />
+
+        <RadioButton
+            android:id="@+id/flavor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blueberry" />
+
+        <RadioButton
+            android:id="@+id/flavor4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banana" />
+
+        <RadioButton
+            android:id="@+id/flavor5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peach" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/iceRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flavorRadioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/iced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iced" />
+
+        <RadioButton
+            android:id="@+id/noIce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Ice" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/sizeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iceRadioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small" />
+
+        <RadioButton
+            android:id="@+id/large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/prepareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prepare Smoothie"
+        android:layout_below="@id/sizeRadioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_below="@id/prepareButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/goToBooksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Books"
+        android:layout_below="@id/clearButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
